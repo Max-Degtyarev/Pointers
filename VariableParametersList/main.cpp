@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 int sum(int count, int number, ...);
@@ -7,17 +7,17 @@ int product(int number...);
 void main()
 {
 	setlocale(LC_ALL, "");
-	cout << "Ñóììà: " << sum(5, 3, 5, 8, 13, 21) << endl;
-	cout << "Ïðîèçâåäåíèå: " << product(3, 5, 8, 13, 21, 0);
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð°: " << sum(5, 3, 5, 8, 13, 21) << endl;
+	cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ: " << product(3, 5, 8, 13, 21, 0);
 
 }
 
 int sum(int count, int number, ...)
 {
-	// - count - êîë-âî ïàðàìåòðîâ â ñïèñêå àðãóìåíòîâ
-	// - number - ïåðâîå ñëàãàåìîå
+	// - count - ÐºÐ¾Ð»-Ð²Ð¾ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð² ÑÐ¿Ð¸ÑÐºÐµ Ð°Ñ€Ð³ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð²
+	// - number - Ð¿ÐµÑ€Ð²Ð¾Ðµ ÑÐ»Ð°Ð³Ð°ÐµÐ¼Ð¾Ðµ
 	int sum = 0;
-	int* p_number = &number; // ïîëó÷àåì àäðåñ ïåðâîãî ñëàãàåìîãî
+	int* p_number = &number; // Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð°Ð´Ñ€ÐµÑ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ ÑÐ»Ð°Ð³Ð°ÐµÐ¼Ð¾Ð³Ð¾
 	for (int i = 0; i < count; i++)
 	{
 		sum += *p_number;
