@@ -1,4 +1,5 @@
 ﻿#include<iostream>
+#include<conio.h>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -32,7 +33,7 @@ void main()
 	// int* - указатель на int
 #endif
 
-	const int n = 5;
+	/*const int n = 5;
 	int arr[n] = { 3, 5, 8, 13, 21 };
 	cout << arr << endl;
 	cout << *arr << endl;
@@ -45,9 +46,38 @@ void main()
 	{
 		cout << *p_arr << "\t";
 
+	}*/
+
+	char key;
+	const int n = 100000;
+	char arr[n] = {};
+	char b;
+	
+	int i = -1;
+	do
+	{
+		//b = _getch();
+		i++;
+		cin >> b;
+		arr[i] = b;
+		cout << arr[i];
+		//b = b + '0';
+		
+
+	}while (arr[i] != 13);
+	
+	int r = 0;
+	for (int i = 0; arr[i] != 0; i++)
+	{
+		cout << arr[i] << " ";
+		r++;
+
 	}
+	cout << endl;
+	cout << r;
 
-
+	//int n = 
+	//int* pa = new int[n];
 
 
 
